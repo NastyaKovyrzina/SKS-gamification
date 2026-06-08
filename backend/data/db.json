@@ -1,0 +1,198 @@
+{
+  "users": [
+    {
+      "id": "u50",
+      "name": "Ольга",
+      "age": 50,
+      "level": 3,
+      "balance": 211,
+      "streak": 1,
+      "lastLoginDate": "2026-06-08",
+      "createdAt": "2026-06-08T00:00:00.000Z"
+    },
+    {
+      "id": "u60",
+      "name": "Сергей",
+      "age": 60,
+      "level": 4,
+      "balance": 320,
+      "streak": 8,
+      "lastLoginDate": null,
+      "createdAt": "2026-06-08T00:00:00.000Z"
+    },
+    {
+      "id": "u70",
+      "name": "Валентина",
+      "age": 70,
+      "level": 6,
+      "balance": 510,
+      "streak": 14,
+      "lastLoginDate": null,
+      "createdAt": "2026-06-08T00:00:00.000Z"
+    }
+  ],
+  "quests": [
+    {
+      "id": "q_steps_light",
+      "title": "Лёгкая прогулка",
+      "description": "Пройти 3000 шагов или 20 минут спокойно погулять.",
+      "reward": 10,
+      "minAge": 18,
+      "maxAge": 75,
+      "type": "activity",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q_water",
+      "title": "Водный баланс",
+      "description": "Выпить 1 стакан воды утром и отметить привычку.",
+      "reward": 5,
+      "minAge": 18,
+      "maxAge": 75,
+      "type": "health",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q_budget",
+      "title": "Мини-бюджет дня",
+      "description": "Записать 3 сегодняшние траты или финансовые цели.",
+      "reward": 12,
+      "minAge": 18,
+      "maxAge": 60,
+      "type": "finance",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q_memory",
+      "title": "Тренировка памяти",
+      "description": "Ответить на 5 коротких вопросов викторины.",
+      "reward": 15,
+      "minAge": 35,
+      "maxAge": 75,
+      "type": "quiz",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q_stretch",
+      "title": "Разминка спины",
+      "description": "Сделать 5 минут мягкой разминки без резких движений.",
+      "reward": 10,
+      "minAge": 30,
+      "maxAge": 75,
+      "type": "activity",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q_digital",
+      "title": "Цифровая гигиена",
+      "description": "Убрать 5 лишних уведомлений или файлов.",
+      "reward": 8,
+      "minAge": 18,
+      "maxAge": 70,
+      "type": "digital",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q_call",
+      "title": "Социальный контакт",
+      "description": "Написать или позвонить одному важному человеку.",
+      "reward": 14,
+      "minAge": 18,
+      "maxAge": 75,
+      "type": "social",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q_sleep",
+      "title": "Сон без хаоса",
+      "description": "За 30 минут до сна убрать телефон и подготовить место отдыха.",
+      "reward": 15,
+      "minAge": 18,
+      "maxAge": 75,
+      "type": "health",
+      "difficulty": "medium"
+    }
+  ],
+  "userProgress": [
+    {
+      "id": "ae9d4ec1-3cce-4946-983c-e43b845e35e5",
+      "userId": "u50",
+      "questId": "q_stretch",
+      "completedAt": "2026-06-08T18:42:04.891Z",
+      "reward": 10
+    },
+    {
+      "id": "38d75172-1980-4a64-bbc7-34b52659ce40",
+      "userId": "u50",
+      "questId": "q_digital",
+      "completedAt": "2026-06-08T18:45:54.411Z",
+      "reward": 8
+    }
+  ],
+  "leaderboard": [
+    {
+      "userId": "u70",
+      "name": "Валентина",
+      "score": 510,
+      "level": 6
+    },
+    {
+      "userId": "u60",
+      "name": "Сергей",
+      "score": 320,
+      "level": 4
+    },
+    {
+      "userId": "u50",
+      "name": "Ольга",
+      "score": 211,
+      "level": 3
+    }
+  ],
+  "transactions": [
+    {
+      "id": "d1875b3a-ce27-4330-890d-334f3169ac2a",
+      "userId": "u50",
+      "type": "quest_complete",
+      "amount": 8,
+      "meta": {
+        "questId": "q_digital",
+        "questTitle": "Цифровая гигиена"
+      },
+      "createdAt": "2026-06-08T18:45:54.411Z"
+    },
+    {
+      "id": "da8a2b82-fb6b-4b36-b05f-bd13c9c8e87a",
+      "userId": "u50",
+      "type": "quest_complete",
+      "amount": 10,
+      "meta": {
+        "questId": "q_stretch",
+        "questTitle": "Разминка спины"
+      },
+      "createdAt": "2026-06-08T18:42:04.891Z"
+    },
+    {
+      "id": "12f31d4f-89e4-4bba-815f-59cbef0fe769",
+      "userId": "u50",
+      "type": "daily_checkin",
+      "amount": 5,
+      "meta": {
+        "streak": 1,
+        "date": "2026-06-08"
+      },
+      "createdAt": "2026-06-08T18:40:45.869Z"
+    },
+    {
+      "id": "be169bcb-2a41-4907-806d-da776cec4e00",
+      "userId": "u50",
+      "type": "wheel_spin",
+      "amount": 3,
+      "meta": {
+        "prize": "+3 бонуса",
+        "probabilityWeight": 35
+      },
+      "createdAt": "2026-06-08T18:40:30.985Z"
+    }
+  ]
+}
