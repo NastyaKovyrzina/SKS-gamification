@@ -5,5 +5,9 @@
     "react-confetti": "^6.4.0",
     "tailwind-merge": "^3.6.0",
     "zustand": "^5.0.14"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3"
   }
 }
