@@ -5,7 +5,6 @@ const crypto = require('crypto');
 
 const PORT = Number(process.env.PORT || 3001);
 const DB_PATH = path.join(__dirname, 'data', 'db.json');
-const DAILY_BONUS = 5;
 
 const CLUB_TIERS = [
   { id: 'bronze', title: 'Бронзовый клуб', minXp: 0, multiplier: 1 },
@@ -54,13 +53,6 @@ function weekKey(date = new Date()) {
   const yearStart = new Date(Date.UTC(current.getUTCFullYear(), 0, 1));
   const weekNo = Math.ceil((((current - yearStart) / 86400000) + 1) / 7);
   return `${current.getUTCFullYear()}-W${String(weekNo).padStart(2, '0')}`;
-}
-
-function daysBetween(dateA, dateB) {
-  const oneDay = 24 * 60 * 60 * 1000;
-  const a = new Date(`${dateA}T00:00:00.000Z`).getTime();
-  const b = new Date(`${dateB}T00:00:00.000Z`).getTime();
-  return Math.round((b - a) / oneDay);
 }
 
 function sendJson(res, statusCode, payload) {
@@ -285,7 +277,6 @@ async function handleRequest(req, res) {
       week: weekKey(),
       endpoints: [
         'GET /api/users',
-        'POST /api/daily-checkin',
         'GET /api/quests/today?userId=u50',
         'POST /api/quest/complete',
         'GET /api/weekly-quiz?userId=u50',
@@ -350,51 +341,6 @@ async function handleRequest(req, res) {
       user: enrichUser(user),
       date: todayKey(),
       quests: getDailyQuests(db, user)
-    });
-  }
-
-  if (req.method === 'POST' && url.pathname === '/api/daily-checkin') {
-    const body = await parseBody(req);
-    const user = findUser(db, body.userId);
-    if (!user) return sendError(res, 404, 'Пользователь не найден');
-
-    const today = todayKey();
-    const lastLoginDate = user.lastLoginDate;
-
-    if (lastLoginDate === today) {
-      return sendJson(res, 200, {
-        ok: true,
-        alreadyCheckedIn: true,
-        message: 'Бонус за сегодня уже получен',
-        user: enrichUser(user)
-      });
-    }
-
-    if (!lastLoginDate) {
-      user.streak = 1;
-    } else if (daysBetween(lastLoginDate, today) === 1) {
-      user.streak += 1;
-    } else {
-      user.streak = 1;
-    }
-
-    user.lastLoginDate = today;
-    user.balance += DAILY_BONUS;
-    user.level = levelFromBalance(user.balance);
-
-    addTransaction(db, user.id, 'daily_checkin', DAILY_BONUS, {
-      streak: user.streak,
-      date: today
-    });
-    recalculateLeaderboard(db);
-    writeDb(db);
-
-    return sendJson(res, 200, {
-      ok: true,
-      alreadyCheckedIn: false,
-      bonus: DAILY_BONUS,
-      message: `Daily check-in: +${DAILY_BONUS} бонусов`,
-      user: enrichUser(user)
     });
   }
 

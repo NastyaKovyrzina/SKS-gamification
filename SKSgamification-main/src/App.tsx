@@ -187,23 +187,6 @@ function App() {
     }
   }
 
-  async function handleDailyCheckin() {
-    try {
-      const data = await requestApi("/api/daily-checkin", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ userId: currentUserId }),
-      });
-
-      if (data.user) setCurrentUser(data.user);
-
-      setMessage(data.message || `Начислено +${data.bonus || 0} бонусов`);
-      await refreshAll(currentUserId);
-    } catch (error) {
-      setMessage(error instanceof Error ? error.message : "Не удалось получить ежедневный бонус");
-    }
-  }
-
   async function handleCompleteQuest(questId: string) {
     try {
       const data = await requestApi("/api/quest/complete", {
@@ -324,20 +307,13 @@ function App() {
                 <p>Возраст: {currentUser.age}</p>
                 <p>Баланс: {currentUser.balance} бонусов</p>
                 <p>Уровень: {currentUser.level}</p>
-                <p>Streak: {currentUser.streak}</p>
                 <p>Опыт клуба: {currentUser.xp}</p>
                 <p>Клуб: {currentUser.clubTitle || currentUser.clubTier}</p>
                 <p>Множитель бонусов за задания: ×{currentUser.bonusMultiplier || 1}</p>
-                <p>Последний вход: {currentUser.lastLoginDate || "ещё не было"}</p>
               </div>
             ) : (
               <p>Пользователь не выбран</p>
             )}
-          </section>
-
-          <section>
-            <h2>Daily Check-in</h2>
-            <button onClick={handleDailyCheckin}>Получить ежедневный бонус</button>
           </section>
 
           <section>
