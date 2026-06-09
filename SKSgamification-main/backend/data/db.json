@@ -1,0 +1,544 @@
+{
+  "users": [
+    {
+      "id": "u50",
+      "name": "Ольга",
+      "age": 50,
+      "level": 3,
+      "balance": 211,
+      "streak": 1,
+      "lastLoginDate": "2026-06-08",
+      "createdAt": "2026-06-08T00:00:00.000Z",
+      "xp": 85,
+      "clubTier": "bronze"
+    },
+    {
+      "id": "u55",
+      "name": "Наталья",
+      "age": 55,
+      "level": 3,
+      "balance": 260,
+      "streak": 2,
+      "lastLoginDate": null,
+      "createdAt": "2026-06-08T00:00:00.000Z",
+      "xp": 130,
+      "clubTier": "silver"
+    },
+    {
+      "id": "u58",
+      "name": "Ирина",
+      "age": 58,
+      "level": 4,
+      "balance": 410,
+      "streak": 5,
+      "lastLoginDate": null,
+      "createdAt": "2026-06-08T00:00:00.000Z",
+      "xp": 260,
+      "clubTier": "gold"
+    },
+    {
+      "id": "u60",
+      "name": "Сергей",
+      "age": 60,
+      "level": 4,
+      "balance": 320,
+      "streak": 8,
+      "lastLoginDate": null,
+      "createdAt": "2026-06-08T00:00:00.000Z",
+      "xp": 180,
+      "clubTier": "silver"
+    },
+    {
+      "id": "u62",
+      "name": "Виктор",
+      "age": 62,
+      "level": 5,
+      "balance": 580,
+      "streak": 7,
+      "lastLoginDate": null,
+      "createdAt": "2026-06-08T00:00:00.000Z",
+      "xp": 520,
+      "clubTier": "platinum"
+    },
+    {
+      "id": "u65",
+      "name": "Людмила",
+      "age": 65,
+      "level": 4,
+      "balance": 455,
+      "streak": 3,
+      "lastLoginDate": null,
+      "createdAt": "2026-06-08T00:00:00.000Z",
+      "xp": 330,
+      "clubTier": "gold"
+    },
+    {
+      "id": "u67",
+      "name": "Александр",
+      "age": 67,
+      "level": 2,
+      "balance": 210,
+      "streak": 0,
+      "lastLoginDate": null,
+      "createdAt": "2026-06-08T00:00:00.000Z",
+      "xp": 40,
+      "clubTier": "bronze"
+    },
+    {
+      "id": "u70",
+      "name": "Валентина",
+      "age": 70,
+      "level": 6,
+      "balance": 510,
+      "streak": 14,
+      "lastLoginDate": null,
+      "createdAt": "2026-06-08T00:00:00.000Z",
+      "xp": 610,
+      "clubTier": "platinum"
+    },
+    {
+      "id": "u73",
+      "name": "Галина",
+      "age": 73,
+      "level": 5,
+      "balance": 690,
+      "streak": 8,
+      "lastLoginDate": null,
+      "createdAt": "2026-06-08T00:00:00.000Z",
+      "xp": 480,
+      "clubTier": "gold"
+    },
+    {
+      "id": "u76",
+      "name": "Николай",
+      "age": 76,
+      "level": 3,
+      "balance": 275,
+      "streak": 2,
+      "lastLoginDate": null,
+      "createdAt": "2026-06-08T00:00:00.000Z",
+      "xp": 150,
+      "clubTier": "silver"
+    }
+  ],
+  "quests": [
+    {
+      "id": "q_steps_light",
+      "title": "Лёгкая прогулка",
+      "description": "Пройти 3000 шагов или 20 минут спокойно погулять.",
+      "reward": 10,
+      "minAge": 18,
+      "maxAge": 75,
+      "type": "activity",
+      "difficulty": "easy",
+      "xpReward": 10,
+      "isActive": true
+    },
+    {
+      "id": "q_water",
+      "title": "Водный баланс",
+      "description": "Выпить 1 стакан воды утром и отметить привычку.",
+      "reward": 5,
+      "minAge": 18,
+      "maxAge": 75,
+      "type": "health",
+      "difficulty": "easy",
+      "xpReward": 5,
+      "isActive": true
+    },
+    {
+      "id": "q_budget",
+      "title": "Мини-бюджет дня",
+      "description": "Записать 3 сегодняшние траты или финансовые цели.",
+      "reward": 12,
+      "minAge": 18,
+      "maxAge": 60,
+      "type": "finance",
+      "difficulty": "medium",
+      "xpReward": 12,
+      "isActive": true
+    },
+    {
+      "id": "q_memory",
+      "title": "Тренировка памяти",
+      "description": "Ответить на 5 коротких вопросов викторины.",
+      "reward": 15,
+      "minAge": 35,
+      "maxAge": 75,
+      "type": "quiz",
+      "difficulty": "medium",
+      "xpReward": 15,
+      "isActive": true
+    },
+    {
+      "id": "q_stretch",
+      "title": "Разминка спины",
+      "description": "Сделать 5 минут мягкой разминки без резких движений.",
+      "reward": 10,
+      "minAge": 30,
+      "maxAge": 75,
+      "type": "activity",
+      "difficulty": "easy",
+      "xpReward": 10,
+      "isActive": true
+    },
+    {
+      "id": "q_digital",
+      "title": "Цифровая гигиена",
+      "description": "Убрать 5 лишних уведомлений или файлов.",
+      "reward": 8,
+      "minAge": 18,
+      "maxAge": 70,
+      "type": "digital",
+      "difficulty": "easy",
+      "xpReward": 8,
+      "isActive": true
+    },
+    {
+      "id": "q_call",
+      "title": "Социальный контакт",
+      "description": "Написать или позвонить одному важному человеку.",
+      "reward": 14,
+      "minAge": 18,
+      "maxAge": 75,
+      "type": "social",
+      "difficulty": "medium",
+      "xpReward": 14,
+      "isActive": true
+    },
+    {
+      "id": "q_sleep",
+      "title": "Сон без хаоса",
+      "description": "За 30 минут до сна убрать телефон и подготовить место отдыха.",
+      "reward": 15,
+      "minAge": 18,
+      "maxAge": 75,
+      "type": "health",
+      "difficulty": "medium",
+      "xpReward": 15,
+      "isActive": true
+    }
+  ],
+  "userProgress": [
+    {
+      "id": "ae9d4ec1-3cce-4946-983c-e43b845e35e5",
+      "userId": "u50",
+      "questId": "q_stretch",
+      "completedAt": "2026-06-08T18:42:04.891Z",
+      "reward": 10
+    },
+    {
+      "id": "38d75172-1980-4a64-bbc7-34b52659ce40",
+      "userId": "u50",
+      "questId": "q_digital",
+      "completedAt": "2026-06-08T18:45:54.411Z",
+      "reward": 8
+    }
+  ],
+  "leaderboard": [
+    {
+      "userId": "u73",
+      "name": "Галина",
+      "score": 690,
+      "level": 5,
+      "xp": 480,
+      "clubTier": "gold",
+      "clubTitle": "Золотой клуб"
+    },
+    {
+      "userId": "u62",
+      "name": "Виктор",
+      "score": 580,
+      "level": 5,
+      "xp": 520,
+      "clubTier": "platinum",
+      "clubTitle": "Платиновый клуб"
+    },
+    {
+      "userId": "u70",
+      "name": "Валентина",
+      "score": 510,
+      "level": 6,
+      "xp": 610,
+      "clubTier": "platinum",
+      "clubTitle": "Платиновый клуб"
+    },
+    {
+      "userId": "u65",
+      "name": "Людмила",
+      "score": 455,
+      "level": 4,
+      "xp": 330,
+      "clubTier": "gold",
+      "clubTitle": "Золотой клуб"
+    },
+    {
+      "userId": "u58",
+      "name": "Ирина",
+      "score": 410,
+      "level": 4,
+      "xp": 260,
+      "clubTier": "gold",
+      "clubTitle": "Золотой клуб"
+    },
+    {
+      "userId": "u60",
+      "name": "Сергей",
+      "score": 320,
+      "level": 4,
+      "xp": 180,
+      "clubTier": "silver",
+      "clubTitle": "Серебряный клуб"
+    },
+    {
+      "userId": "u76",
+      "name": "Николай",
+      "score": 275,
+      "level": 3,
+      "xp": 150,
+      "clubTier": "silver",
+      "clubTitle": "Серебряный клуб"
+    },
+    {
+      "userId": "u55",
+      "name": "Наталья",
+      "score": 260,
+      "level": 3,
+      "xp": 130,
+      "clubTier": "silver",
+      "clubTitle": "Серебряный клуб"
+    },
+    {
+      "userId": "u50",
+      "name": "Ольга",
+      "score": 211,
+      "level": 3,
+      "xp": 85,
+      "clubTier": "bronze",
+      "clubTitle": "Бронзовый клуб"
+    },
+    {
+      "userId": "u67",
+      "name": "Александр",
+      "score": 210,
+      "level": 2,
+      "xp": 40,
+      "clubTier": "bronze",
+      "clubTitle": "Бронзовый клуб"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "d1875b3a-ce27-4330-890d-334f3169ac2a",
+      "userId": "u50",
+      "type": "quest_complete",
+      "amount": 8,
+      "meta": {
+        "questId": "q_digital",
+        "questTitle": "Цифровая гигиена"
+      },
+      "createdAt": "2026-06-08T18:45:54.411Z"
+    },
+    {
+      "id": "da8a2b82-fb6b-4b36-b05f-bd13c9c8e87a",
+      "userId": "u50",
+      "type": "quest_complete",
+      "amount": 10,
+      "meta": {
+        "questId": "q_stretch",
+        "questTitle": "Разминка спины"
+      },
+      "createdAt": "2026-06-08T18:42:04.891Z"
+    },
+    {
+      "id": "12f31d4f-89e4-4bba-815f-59cbef0fe769",
+      "userId": "u50",
+      "type": "daily_checkin",
+      "amount": 5,
+      "meta": {
+        "streak": 1,
+        "date": "2026-06-08"
+      },
+      "createdAt": "2026-06-08T18:40:45.869Z"
+    },
+    {
+      "id": "be169bcb-2a41-4907-806d-da776cec4e00",
+      "userId": "u50",
+      "type": "wheel_spin",
+      "amount": 3,
+      "meta": {
+        "prize": "+3 бонуса",
+        "probabilityWeight": 35
+      },
+      "createdAt": "2026-06-08T18:40:30.985Z"
+    }
+  ],
+  "weeklyQuizzes": [
+    {
+      "id": "wq_finance_safe",
+      "title": "Финансовая безопасность недели",
+      "description": "Небольшой квиз про безопасные финансовые привычки и защиту от мошенников.",
+      "reward": 60,
+      "xpReward": 80,
+      "minAge": 50,
+      "maxAge": 99,
+      "type": "finance",
+      "questions": [
+        {
+          "text": "Что безопаснее сделать при подозрительном звонке из банка?",
+          "options": [
+            "Назвать код из SMS",
+            "Положить трубку и перезвонить в банк самому",
+            "Перевести деньги на безопасный счет"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "text": "Где лучше хранить PIN-код от карты?",
+          "options": [
+            "На самой карте",
+            "В заметках телефона без пароля",
+            "Не хранить рядом с картой и не сообщать другим"
+          ],
+          "correctIndex": 2
+        },
+        {
+          "text": "Что проверить перед переходом по ссылке из сообщения?",
+          "options": [
+            "Адрес сайта и отправителя",
+            "Цвет кнопки",
+            "Количество эмодзи"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "wq_lombard_rules",
+      "title": "Умный ломбард",
+      "description": "Квиз про правила оценки вещей, сроки и ответственное использование услуг ломбарда.",
+      "reward": 75,
+      "xpReward": 90,
+      "minAge": 50,
+      "maxAge": 99,
+      "type": "lombard",
+      "questions": [
+        {
+          "text": "Что стоит сделать перед сдачей вещи в ломбард?",
+          "options": [
+            "Уточнить условия, срок и сумму выкупа",
+            "Не читать договор",
+            "Оставить документы дома"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "text": "Что помогает получить более точную оценку техники?",
+          "options": [
+            "Комплект, зарядка, документы и исправное состояние",
+            "Только коробка без устройства",
+            "Скрыть дефекты"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "text": "Почему важно помнить дату выкупа?",
+          "options": [
+            "Чтобы не потерять право на возврат вещи",
+            "Чтобы получить случайный подарок",
+            "Это не имеет значения"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "wq_digital_comfort",
+      "title": "Цифровой комфорт",
+      "description": "Квиз про простые цифровые действия: уведомления, пароли и порядок в телефоне.",
+      "reward": 55,
+      "xpReward": 70,
+      "minAge": 50,
+      "maxAge": 99,
+      "type": "digital",
+      "questions": [
+        {
+          "text": "Какой пароль лучше?",
+          "options": [
+            "123456",
+            "Дата рождения",
+            "Длинный уникальный пароль"
+          ],
+          "correctIndex": 2
+        },
+        {
+          "text": "Что делать с лишними уведомлениями?",
+          "options": [
+            "Отключить ненужные",
+            "Игнорировать всегда",
+            "Удалить все приложения"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "text": "Зачем обновлять приложения?",
+          "options": [
+            "Для безопасности и исправлений",
+            "Чтобы занять память",
+            "Это всегда вредно"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  ],
+  "weeklyQuizProgress": [],
+  "shopItems": [
+    {
+      "id": "shop_partner_certificate_300",
+      "title": "Сертификат партнера на 300 ₽",
+      "description": "Скидочный сертификат у партнера программы.",
+      "category": "certificate",
+      "price": 300,
+      "stock": 12,
+      "isActive": true
+    },
+    {
+      "id": "shop_lombard_discount",
+      "title": "Скидка на услугу оценки",
+      "description": "Промокод на бесплатную или расширенную оценку вещи.",
+      "category": "lombard",
+      "price": 180,
+      "stock": 20,
+      "isActive": true
+    },
+    {
+      "id": "shop_merch_bag",
+      "title": "Фирменный шоппер",
+      "description": "Мерч программы лояльности.",
+      "category": "merch",
+      "price": 450,
+      "stock": 8,
+      "isActive": true
+    },
+    {
+      "id": "shop_priority_service",
+      "title": "Приоритетное обслуживание",
+      "description": "Быстрое обслуживание в офисе партнера.",
+      "category": "service",
+      "price": 220,
+      "stock": 15,
+      "isActive": true
+    },
+    {
+      "id": "shop_partner_certificate_700",
+      "title": "Сертификат партнера на 700 ₽",
+      "description": "Сертификат повышенного номинала для активных участников.",
+      "category": "certificate",
+      "price": 650,
+      "stock": 5,
+      "isActive": true
+    }
+  ],
+  "redemptions": []
+}
